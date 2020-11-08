@@ -1,0 +1,213 @@
+/* Gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F4F6;
+  }
+
+h2 {
+  color: #424242;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
+}
+
+p, li {
+  color: #424242;
+  font-size: 14px;
+}
+
+/* Barra de navegação */
+header, .navbar {
+  background-color: #7DC2F7;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 110px;
+}
+
+.navbar-brand {
+  padding: 0;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+#navbar-links a {
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+}
+
+.nav-item.active {
+  border-bottom: 3px solid #fff;
+  
+}
+
+.divisor{
+  width: 2px;
+  height: 16px;
+  background:#fff;
+  margin: 20px 10px;
+}
+
+/* Slider */
+
+.container-fluid {
+  padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+  height: 75vh;
+}
+
+#mainSlider .carousel-caption {
+  top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.main-btn {
+  background-color: #F4E04D;
+  color: #424242;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: .5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border-color: #F4E04D;
+}
+
+.carousel-indicators .active {
+  background-color:#F4E04D;
+}
+
+/* Sobre o Educa Play */
+
+#about-area {
+  background-color: #fff;
+}
+
+.main-title {
+  color: #FD967E;;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-title::after {
+  content: "";
+  border-top: 2px solid #424242;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: #424242;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-list li {
+  line-height: 30px;
+}
+
+#about-list i {
+  color:  #7DC2F7;
+  margin-right: 15px;
+}
+
+/* Aulas */
+
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box h4 {
+  transition: .5s;
+}
+
+
+.service-box h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-box:hover h4 {
+  color: #7DC2F7;
+}
+
+
+#subscribe-area {
+  text-align: center;
+}
+
+
+#login-area {
+  text-align: center;
+  background-color: #fff;
+ }
+
+
+/* Footer */
+
+
+#contact-area {
+  padding-bottom: 5px;
+}
+ 
+/* Copy */
+
+#copy-area {
+  background-color:#fff;  
+  
+}
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;  
+  }
+
+#copy-area .container p {
+  margin-bottom: 0;  
+}
