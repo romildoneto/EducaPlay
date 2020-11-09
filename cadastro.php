@@ -62,8 +62,8 @@ isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['confirmaSenha'
             <a class="nav-item nav-link" id="home-menu" href="index.html">Home</span></a>
             <a class="nav-item nav-link" id="about-menu" href="#">Sobre</a> 
             <a class="divisor" role="separator" href="#"></a>       
-            <a class="nav-item nav-link" id="subscribe-menu" href="cadastro.html">Cadastre-se</a>
-            <a class="nav-item nav-link" id="login-menu" href="index.php">Entrar</a>
+            <a class="nav-item nav-link" id="subscribe-menu" href="cadastro.php">Cadastre-se</a>
+            <a class="nav-item nav-link" id="login-menu" href="login.php">Entrar</a>
           </div>
         </div>
       </nav>
