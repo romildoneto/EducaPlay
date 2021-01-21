@@ -1,37 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username =  "root";
-$password = "";
-$database = "educaplay";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if(isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['cpf']) && isset($_POST['rg']) && 
-isset($_POST['endereco']) && isset($_POST['cidade']) && isset($_POST['cep']) &&
-isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['confirmaSenha'])){
-
-
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
-    $cpf = $_POST['cpf'];
-    $rg = $_POST['rg'];
-    $endereco = $_POST['endereco'];
-    $cidade = $_POST['cidade'];
-    $cep = $_POST['cep'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $confirmaSenha = $_POST['confirmaSenha'];
-    
-    
-    $sql = "insert into usuario (nome , sobrenome , cpf, rg, endereco, cidade, cep, email, senha, confirmaSenha) values ('$nome','$sobrenome','$cpf','$rg','$endereco','$cidade','$cep','$email','$senha','$confirmaSenha')";
-    $result = $conn->query($sql);
-          
-     
-   
-    
-    
-}
+session_start();
 
 ?>
 
@@ -82,17 +50,18 @@ isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['confirmaSenha'
       </div>
 
     </section>
-
     <section id="section-form-cadastro">
         <div class="div-form-cadastro">
 
-        <form method="post" name='usuario' action="">
+
+
+        <form method="post"  action="processa_cadastro.php">
             <div class="form-row">
               <div class="form-group col-md-6">
-                Nome<input name="nome" type="text" class="form-control" placeholder="Antonio">
+                Nome<input name="nome" type="text" class="form-control" placeholder="Antonio"required>
               </div>
               <div class="form-group col-md-6">
-                Sobrenome<input name="sobrenome" type="text" class="form-control" placeholder="Aparecido de Oliveira">
+                Sobrenome<input name="sobrenome" type="text" class="form-control" placeholder="Aparecido de Oliveira" required>
               </div>
             </div>
             
@@ -101,49 +70,53 @@ isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['confirmaSenha'
             <div class="form-row">
               <div class="form-group col-md-6">
                 
-                CPF<input name="cpf" type="text" class="form-control" placeholder="Digite seu CPF">
+                CPF<input name="cpf" type="text" class="form-control" placeholder="Digite seu CPF" required>
               </div>
               <div class="form-group col-md-6">
-                RG<input name="rg" type="text" class="form-control" placeholder="Digite seu RG">
+                RG<input name="rg" type="text" class="form-control" placeholder="Digite seu RG" required>
               </div>
             </div>
 
             <div class="form-group">
               
-              Endereço<input name="endereco" type="text" class="form-control"  placeholder="Rua dos Bobos, nº 0">
+              Endereço<input name="endereco" type="text" class="form-control"  placeholder="Rua dos Bobos, nº 0" required>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 
-                Cidade<input name="cidade" type="text" class="form-control">
+                Cidade<input name="cidade" type="text" class="form-control" required>
               </div>
               <div class="form-group col-md-2">
-                CEP<input name="cep" type="text" class="form-control">
+                CEP<input name="cep" type="text" class="form-control" required>
               </div>
             </div>
             <div class="form-group">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  Email<input name="email" type="email" class="form-control" placeholder="Email">
+                  Email<input name="email" type="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group col-md-6">
-                  Senha<input name="senha" type="password" class="form-control" placeholder="Senha">
+                  Senha<input name="senha" type="password" class="form-control" placeholder="Senha" required>
                 </div>
                 <div class="form-group col-md-6">
-                  Confirmar Senha<input name="confirmaSenha" type="password" class="form-control" placeholder="Senha">
+                  Confirmar Senha<input name="confirmaSenha" type="password" class="form-control" placeholder="Senha" required>
                 </div>
               </div>
               
             </div>
             <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
+
+
+
+
           </form>
 
-          
+        
 
 </div> 
 </section>
 
--->
+
 
 
     
@@ -152,4 +125,3 @@ isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['confirmaSenha'
 
 </body>
 </html>
-
